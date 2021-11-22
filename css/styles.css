@@ -495,6 +495,7 @@ body._lock {
 }
 
 .main__faq-slider {
+  width: 1200px;
   max-width: 1600px;
   margin: 0px auto 60px;
 }
@@ -924,21 +925,9 @@ body._lock {
 
 .faq-slider {
   text-align: center;
-  padding: 0px 40px 20px;
+  padding: 0px 0px 20px;
   position: relative;
   overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  .faq-slider {
-    padding: 0px 25px 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .faq-slider {
-    padding: 0px 15px 20px;
-  }
 }
 
 .faq-slider__title {
@@ -960,7 +949,7 @@ body._lock {
 .faq-slider__arrow {
   content: '';
   position: absolute;
-  top: 57%;
+  top: 54%;
   width: 44px;
   height: 44px;
   -webkit-box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
