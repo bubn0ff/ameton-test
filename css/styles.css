@@ -947,7 +947,6 @@ body._lock {
 }
 
 .faq-slider__arrow {
-  content: '';
   position: absolute;
   top: 54%;
   width: 44px;
@@ -990,7 +989,7 @@ body._lock {
 }
 
 .faq-slider__arrow_prev {
-  background: url("../img/icon-arrow.svg") center no-repeat;
+  background: #fff url("../img/icon-arrow.svg") center no-repeat;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   left: 1%;
@@ -1003,7 +1002,7 @@ body._lock {
 }
 
 .faq-slider__arrow_next {
-  background: url("../img/icon-arrow.svg") center no-repeat;
+  background: #fff url("../img/icon-arrow.svg") center no-repeat;
   right: 1%;
 }
 

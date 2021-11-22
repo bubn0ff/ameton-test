@@ -579,7 +579,6 @@ body._lock {
 
   // .faq-slider__arrow
   &__arrow {
-    content: '';
     position: absolute;
     top: 54%;
     width: 44px;
@@ -617,7 +616,7 @@ body._lock {
 
     // .faq-slider__arrow_prev
     &_prev {
-      background: url('../img/icon-arrow.svg') center no-repeat;
+      background: #fff url('../img/icon-arrow.svg') center no-repeat;
       transform: rotate(-180deg);
       left: 1%;
 
@@ -628,7 +627,7 @@ body._lock {
 
     // .faq-slider__arrow_next
     &_next {
-      background: url('../img/icon-arrow.svg') center no-repeat;
+      background: #fff url('../img/icon-arrow.svg') center no-repeat;
       right: 1%;
 
       @include md2() {
