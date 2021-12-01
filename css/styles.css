@@ -411,9 +411,6 @@ button {
   font-family: inherit;
   border: 0;
   padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   background-color: transparent;
 }
 
@@ -435,19 +432,6 @@ body._lock {
   overflow: hidden;
 }
 
-._word-break-line {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-._word-break {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 ._button {
   padding: 15px;
   border-radius: 12px;
@@ -456,6 +440,9 @@ body._lock {
   line-height: 18px;
   cursor: pointer;
   position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main {
@@ -589,6 +576,10 @@ body._lock {
   line-height: 24px;
   color: #1A1A1A;
   margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -1057,6 +1048,10 @@ body._lock {
   font-size: 15px;
   line-height: 21px;
   color: #949494;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -1166,6 +1161,9 @@ body._lock {
   font-size: 13px;
   line-height: 18px;
   color: #949494;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .accordion__img {

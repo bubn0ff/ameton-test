@@ -48,7 +48,6 @@ button {
   font-family: inherit;
   border: 0;
   padding: 0;
-  appearance: none;
   background-color: transparent;
 }
 
@@ -87,18 +86,12 @@ body._lock {
   overflow: hidden;
 }
 
-._word-break-line {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-._word-break {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+// ._word-break-line {
+//   display: -webkit-box;
+//   -webkit-line-clamp: 3;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+// }
 
 ._button {
   padding: 15px;
@@ -108,6 +101,7 @@ body._lock {
   line-height: 18px;
   cursor: pointer;
   position: relative;
+  @include word-break();
 }
 
 //=======< / ОБЩИЕ СТИЛИ >============================================================= 
@@ -227,6 +221,7 @@ body._lock {
   line-height: 24px;
   color: $font-color-grey;
   margin-bottom: 8px;
+  @include word-break-line();
 
   @include md3() {
     font-size: 16px;
@@ -679,6 +674,7 @@ body._lock {
     font-size: $font-size-min;
     line-height: 21px;
     color: $font-color-light-grey;
+    @include word-break-line();
 
     @include md3() {
       font-size: 13px;
@@ -776,6 +772,7 @@ body._lock {
     font-size: 13px;
     line-height: 18px;
     color: $font-color-light-grey;
+    @include word-break();
   }
 
   // .accordion__img

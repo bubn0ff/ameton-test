@@ -26,3 +26,20 @@
 
 //===========< / Медиа-запросы >===========
 
+//===========< Три точки при переполнении текста в блоке >===========
+
+@mixin word-break() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// с указанием количества максимальных строк
+@mixin word-break-line($x: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $x;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+//===========< / Три точки при переполнении текста в блоке >===========
